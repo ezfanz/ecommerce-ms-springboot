@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/user-service
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  flyway: #flyway automatically uses the datasource from the application to connect to the DB
+    enabled: true # enables flyway database migration
+    locations: classpath:db/migration # the location where flyway should look for migration scripts
+    validate-on-migrate: true
+    default-schema: user-service
+server:
+  port: 8081
