@@ -1,4 +1,4 @@
-package ecommerce.common_service;
+package ecommerce.common.service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

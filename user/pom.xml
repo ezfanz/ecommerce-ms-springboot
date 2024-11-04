@@ -57,7 +57,7 @@
 		<!-- Add the common-service as a dependency -->
 		<dependency>
 			<groupId>ecommerce</groupId>
-			<artifactId>common-service</artifactId>
+			<artifactId>common.service</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

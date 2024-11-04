@@ -1,0 +1,33 @@
+meta {
+  name: Create Users
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{url}}/v1/users
+  body: json
+  auth: basic
+}
+
+headers {
+  : 
+}
+
+auth:basic {
+  username: irfan
+  password: password123
+}
+
+body:json {
+  {
+      "userName": "imran",
+      "password": "password123",
+      "email": "irfan@gmail.com",
+      "firstName": "Imran",
+      "lastName": "Zulkefly",
+      "phoneNumber": "60193205891",
+      "address": "C7-13 Amazing Height Apartment Jalan Udang Kara Sungai Udang 41250 Klang"
+  }
+  
+}
