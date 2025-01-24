@@ -16,6 +16,7 @@ spring:
     validate-on-migrate: true
     default-schema: user-service
   security:
+##    enabled: false
     user:
       name: irfan # default username
       password: "$2a$12$8bgKpthG2vU6nqFH4gYZge9IWJGunS6HDud8KvCeTeHloeKY7h6Fq" # BCrypt encoded password

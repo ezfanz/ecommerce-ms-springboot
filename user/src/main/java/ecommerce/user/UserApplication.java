@@ -2,6 +2,7 @@ package ecommerce.user;
 
 import ecommerce.common.service.Aop.LogServiceAdvice;
 import ecommerce.common.service.Config.LoggingConfig;
+import ecommerce.common.service.Config.SecurityConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,7 +17,7 @@ import java.nio.file.Paths;
 
 @Slf4j
 @SpringBootApplication
-@Import({LogServiceAdvice.class})
+@Import({LogServiceAdvice.class, LoggingConfig.class, SecurityConfig.class})
 public class UserApplication {
 
 	public static void main(String[] args) {
